@@ -1,4 +1,5 @@
 const express = require('express');
+
 const schuelerRouter = require('./schueler.js');
 const photosRouter = require('./photos.js');
 
@@ -9,6 +10,8 @@ app.get('/', (req, res) => {
 		message: 'Hi'
 	});
 });
+
+app.use(express.json());
 
 app.use('/schueler', schuelerRouter);
 app.use('/photos', photosRouter);
