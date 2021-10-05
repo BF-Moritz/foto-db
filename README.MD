@@ -43,3 +43,7 @@ Löschungsdatum?
 /photos -> zeigt alle photos an
 /add/schüler -> kann schüler hinzufügen
 /add/photo -> kann photo hochladen
+
+# Zusatzfunktionen
+
+-   Klassen++

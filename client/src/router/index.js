@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 import Schueler from '../views/Schueler.vue';
+import AddSchueler from '../views/AddSchueler.vue';
 
 Vue.use(VueRouter);
 
@@ -15,7 +16,7 @@ const routes = [
 		path: '/schueler',
 		name: 'Schueler',
 		component: Schueler
-	}
+	},
 	// {
 	// 	path: '/schueler/:id',
 	// 	name: 'OneSchueler',
@@ -26,11 +27,11 @@ const routes = [
 	// 	name: 'Photos',
 	// 	component: Photos
 	// },
-	// {
-	// 	path: '/add/schueler',
-	// 	name: 'AddSchueler',
-	// 	component: AddSchueler
-	// },
+	{
+		path: '/add/schueler',
+		name: 'AddSchueler',
+		component: AddSchueler
+	}
 	// {
 	// 	path: '/add/photo',
 	// 	name: 'AddPhoto',
