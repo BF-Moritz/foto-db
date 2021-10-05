@@ -15,6 +15,8 @@ delete "/photos/:id" -> status
 
 get "/search/schueler?q=" schüler suche
 
+# DB
+
 Schüler:
 
 Nachname
@@ -32,3 +34,12 @@ Fotograph
 Schüler[] (ID)
 Erstellungsdatum
 Löschungsdatum?
+
+# Frontend
+
+/ -> homepage
+/schüler -> zeigt alle schüler an und schülersuche
+/schüler/:id -> zeigt infos für den schüler an + alle photos von ihm
+/photos -> zeigt alle photos an
+/add/schüler -> kann schüler hinzufügen
+/add/photo -> kann photo hochladen
