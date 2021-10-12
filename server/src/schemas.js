@@ -5,10 +5,10 @@ const schuelerSchema = joi.object({
 	vorname: joi.string().trim().required(),
 	klasse: joi.string().trim().required(),
 
-	einverstaendnis1: joi.boolean(),
-	einverstaendnis2: joi.boolean(),
-	einverstaendnis3: joi.boolean(),
-	einverstaendnis4: joi.boolean()
+	einverstaendnis1: joi.string().valid('Ja', 'Nein', 'Individuell'),
+	einverstaendnis2: joi.string().valid('Ja', 'Nein', 'Individuell'),
+	einverstaendnis3: joi.string().valid('Ja', 'Nein', 'Individuell'),
+	einverstaendnis4: joi.string().valid('Ja', 'Nein', 'Individuell')
 });
 
 const photoSchema = joi.object({

@@ -1,9 +1,12 @@
 const express = require('express');
+const cors = require('cors');
 
 const schuelerRouter = require('./schueler.js');
 const photosRouter = require('./photos.js');
 
 const app = express();
+
+app.use(cors());
 
 app.get('/', (req, res) => {
 	res.json({
