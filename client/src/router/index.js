@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 import Schueler from '../views/Schueler.vue';
 import AddSchueler from '../views/AddSchueler.vue';
+import AddPhoto from '../views/AddPhoto.vue';
 
 Vue.use(VueRouter);
 
@@ -31,12 +32,12 @@ const routes = [
 		path: '/add/schueler',
 		name: 'AddSchueler',
 		component: AddSchueler
+	},
+	{
+		path: '/add/photo',
+		name: 'AddPhoto',
+		component: AddPhoto
 	}
-	// {
-	// 	path: '/add/photo',
-	// 	name: 'AddPhoto',
-	// 	component: AddPhoto
-	// }
 ];
 
 const router = new VueRouter({

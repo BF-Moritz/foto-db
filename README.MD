@@ -1,3 +1,9 @@
+# STEPS (TODO)
+
+-   foto hinzufügen
+-   alle fotos anzeigen
+-   einzelnen schüler anzeigen
+
 # API
 
 get "/schueler/" -> alle schüler
